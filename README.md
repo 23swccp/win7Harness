@@ -1,4 +1,5 @@
 # Win7 Harness
+[中文](README.md) | [English](README.en.md)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-Windows%207%20SP1%2B-0078D6?logo=windows)
 ![Dependencies](https://img.shields.io/badge/deps-requests%20only-blue)
