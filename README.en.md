@@ -9,7 +9,7 @@
 
 A lightweight command-line AI assistant for Windows 7, built with Python 3.8. It supports file operations, command execution, and context compaction.
 
-The computers in my school's lab are awful: Windows 7, pip is all we get, and SSL/certificate problems prevent browser sign-ins.
+The computers in my school's lab are shit: Windows 7, pip is all we get, and SSL/certificate problems prevent browser sign-ins.
 Meanwhile, our teacher still expects us to write C# by hand.
 
 - **Python 3.8 is enough** — the last CPython release series to officially support Windows 7.
