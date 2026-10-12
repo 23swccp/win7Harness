@@ -6,6 +6,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 [中文](README.md) | [English](README.en.md)
+
 面向 Windows 7 的轻量命令行 AI 助手，使用 Python 3.8，支持文件操作、命令执行和上下文压缩。
 
 在学校的垃圾机房电脑:win7系统,只能pip,SSL过期,证书限制无法登录浏览器
