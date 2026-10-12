@@ -23,15 +23,15 @@
 | 网络 | 可访问所选 API 端点；首次安装依赖时需要 pip 源 |
 | 命令工具 | `cmd.exe`；`run_powershell` 使用系统自带 Windows PowerShell 2.0 兼容语法 |
 
-
-把 `harness_single.py` 复制到目标机器，然后：
+## 快速开始
+把 `harness_single.py` 复制到目标机器的工作区文件夹，然后在cmd运行：
 
 ```bat
 python harness_single.py
 ```
 
-首次运行会提示输入 API URL、API key（隐藏输入）和模型名。想免去每次输入，就编辑文件开头的**配置区**（由 `config.example.py` 生成）填好这三项。
-在哪个文件路径启动,工作区就是文件路径
+首次运行会提示输入 API URL、API key和模型名。想免去每次输入，就编辑文件开头的**配置区**（由 `config.example.py` 生成）填好这三项。
+Agent只能修改工作区的文件.
 
 本项目采用 [MIT 许可证](LICENSE)。
 
