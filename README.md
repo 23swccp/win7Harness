@@ -33,8 +33,9 @@ python harness_single.py
 首次运行会提示输入 API URL、API key和模型名。想免去每次输入，就编辑文件开头的**配置区**（由 `config.example.py` 生成）填好这三项。
 Agent只能修改工作区的文件.
 
+## 许可与致谢
 本项目采用 [MIT 许可证](LICENSE)。
-
+opencode是我最喜欢的Harness
 上下文压缩的摘要模板与滚动更新提示词移植自 [OpenCode](https://github.com/anomalyco/opencode)（MIT License，Copyright (c) 2025 opencode），原版权与许可声明保留在 `context_compaction.py` 及生成的单文件版中。
 
 
