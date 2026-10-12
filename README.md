@@ -1,10 +1,11 @@
 # Win7 Harness
-[中文](README.md) | [English](README.en.md)
+
 ![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-Windows%207%20SP1%2B-0078D6?logo=windows)
 ![Dependencies](https://img.shields.io/badge/deps-requests%20only-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+[中文](README.md) | [English](README.en.md)
 面向 Windows 7 的轻量命令行 AI 助手，使用 Python 3.8，支持文件操作、命令执行和上下文压缩。
 
 在学校的垃圾机房电脑:win7系统,只能pip,SSL过期,证书限制无法登录浏览器
