@@ -27,7 +27,7 @@
 | 命令工具 | `cmd.exe`；`run_powershell` 使用系统自带 Windows PowerShell 2.0 兼容语法 |
 
 ## 快速开始
-把 `harness_single.py` 复制到目标机器的工作区文件夹，然后在cmd运行：
+把 `harness_single.py` 复制到工作区文件夹，然后在cmd运行：
 
 ```bat
 python harness_single.py
@@ -38,7 +38,9 @@ Agent只能修改工作区的文件.
 
 ## 许可与致谢
 本项目采用 [MIT 许可证](LICENSE)。
+
 opencode是我最喜欢的Harness
+
 上下文压缩的摘要模板与滚动更新提示词移植自 [OpenCode](https://github.com/anomalyco/opencode)（MIT License，Copyright (c) 2025 opencode），原版权与许可声明保留在 `context_compaction.py` 及生成的单文件版中。
 
 
