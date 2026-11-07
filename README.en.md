@@ -38,6 +38,9 @@ On first run, enter the API URL, API key, and model name when prompted. To avoid
 
 The agent must only modify files inside the workspace.
 
+
+Each task allows up to 999 tool calls, with no separate write limit. Conversation context is saved to `.win7harness-context.json` in the workspace and restored on restart. The file may contain sensitive information; delete it to start a new conversation. Configure `MAX_TOOL_CALLS` and `CONTEXT_FILE` as needed.
+
 ## License and Acknowledgments
 
 This project is licensed under the [MIT License](LICENSE).

@@ -98,8 +98,6 @@ TOOLS = [
 ]
 TOOLS += SHELL_TOOLS
 
-# 可能修改文件的工具，命令执行也计入单轮写操作次数。
-WT = ("write_file", "append_file", "replace_in_file", "delete_file", "run_cmd", "run_powershell")
 
 
 # 将路径解析为真实路径，限制访问范围为工作区。

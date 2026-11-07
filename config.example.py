@@ -16,8 +16,11 @@ MODEL = "deepseek-v4-flash"
 # 工具结果与文件读取的字符上限；按行读取包含行号，续读提示另附。
 MAX_CHARS = 8000
 
-# 单轮任务允许的写操作尝试次数，包括修改和删除。
-MAX_WRITES = 10
+# 单轮任务允许的工具调用次数。
+MAX_TOOL_CALLS = 999
+
+# 工作区中的持久化上下文文件。
+CONTEXT_FILE = os.path.join(ROOT, ".win7harness-context.json")
 
 # 上下文预算须不大于实际模型容量；0 关闭自动压缩，仍可 /compact。
 CONTEXT_TOKENS = 128000

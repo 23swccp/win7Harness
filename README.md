@@ -36,6 +36,9 @@ python harness_single.py
 首次运行会提示输入 API URL、API key和模型名。想免去每次输入，就编辑文件开头的**配置区**（由 `config.example.py` 生成）填好这三项。
 Agent只能修改工作区的文件.
 
+
+每轮最多调用工具 999 次，写操作不设单独次数上限。对话上下文保存在工作区的 `.win7harness-context.json`，重启后自动载入；文件可能包含敏感内容，删除它可开始新对话。可在配置中修改 `MAX_TOOL_CALLS` 和 `CONTEXT_FILE`。
+
 ## 许可与致谢
 本项目采用 [MIT 许可证](LICENSE)。
 

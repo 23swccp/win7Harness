@@ -6,6 +6,7 @@ import importlib.util
 import io
 import json
 import pathlib
+import tempfile
 import types
 import unittest
 from unittest.mock import Mock, patch
@@ -45,14 +46,17 @@ def history():
 class CompactionTests(unittest.TestCase):
     def setUp(self):
         self.config = types.SimpleNamespace(
-            ROOT=str(ROOT), MAX_CHARS=8000, MAX_WRITES=10,
+            ROOT=str(ROOT), MAX_CHARS=8000,
             CONTEXT_TOKENS=8000, KEEP_TOKENS=100, SUMMARY_TOKENS=512,
             API="http://unused.invalid", KEY="test-only", MODEL="test-model", THRESH=5, COOL=60,
         )
+        temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(temporary.cleanup)
+        self.config.CONTEXT_FILE = str(pathlib.Path(temporary.name) / "context.json")
         self.api = types.SimpleNamespace(STOP=False, EXIT=False)
         self.api.check_control = lambda: self.api.STOP
         self.api.network_lines = Mock(side_effect=lambda *args, **kwargs: response())
-        self.files = types.SimpleNamespace(TOOLS=[], WT=(), run=Mock())
+        self.files = types.SimpleNamespace(TOOLS=[], run=Mock())
         self.modules = {"config": self.config, "api_client": self.api, "file_tools": self.files}
         self.module = load("test_compaction", "context_compaction.py", self.modules)
         self.compactor = self.module.ContextCompactor()
