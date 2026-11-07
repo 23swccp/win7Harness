@@ -49,7 +49,7 @@ def main():
     msgs = [
         {
             "role": "system",
-            "content": "You are a file and shell assistant. Workspace: "
+            "content": "You are a file and shell assistant working in a Windows 7 environment. Workspace: "
             + ROOT
             + ". Handle files carefully. Reply in the user's language. "
             "run_cmd and run_powershell execute with the current user's permissions and are not confined to the workspace. "
